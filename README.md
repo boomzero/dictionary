@@ -20,7 +20,7 @@ To build the program using cmake, follow these steps:
 - Run make to build the program: `make`
 - Run the program: `./dic`
 
-The program will prompt you to enter a text input. You can type or paste any text you want, as long as it is in English. When you are done, press Enter to submit your input. The program will then print out the definitions of the words in your input using an online dictionary API. If a word is not found in the dictionary, the program will print "not found" instead. To exit the program, enter "0" as your input.
+The program will prompt you to enter a text input. You can type or paste any text you want, as long as it is in English. When you are done, press Enter to submit your input. The program will then print out the definitions of the words in your input using an online dictionary API. If a word is not found in the dictionary, the program will print "not found" instead. To exit the program, enter "0" as your input, alternatively, you can send EOF by pressing ctrl+D.
 
 I hope this readme helps you understand and use the Word Definition Finder project. I think it is a very interesting and useful project that can help you learn new words and improve your vocabulary. 😊
 
