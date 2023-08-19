@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

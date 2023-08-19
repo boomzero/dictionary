@@ -1,0 +1,198 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: cpr-populate
+# Configurations: 
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/
+
+#############################################
+# Utility command for cpr-populate
+
+build cpr-populate: phony CMakeFiles/cpr-populate CMakeFiles/cpr-populate-complete cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild -B/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Phony custom command for CMakeFiles/cpr-populate
+
+build CMakeFiles/cpr-populate | ${cmake_ninja_workdir}CMakeFiles/cpr-populate: phony CMakeFiles/cpr-populate-complete
+
+
+#############################################
+# Custom command for CMakeFiles/cpr-populate-complete
+
+build CMakeFiles/cpr-populate-complete cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done | ${cmake_ninja_workdir}CMakeFiles/cpr-populate-complete ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-done
+  DESC = Completed 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build
+  DESC = No build step for 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure: CUSTOM_COMMAND cpr-populate-prefix/tmp/cpr-populate-cfgcmd.txt cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure
+  DESC = No configure step for 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-gitinfo.txt cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/tmp/cpr-populate-gitclone.cmake && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download
+  DESC = Performing download step (git clone) for 'cpr-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install
+  DESC = No install step for 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir: CUSTOM_COMMAND
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -Dcfgdir= -P /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/tmp/cpr-populate-mkdirs.cmake && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir
+  DESC = Creating directories for 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch
+  DESC = No patch step for 'cpr-populate'
+  pool = console
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-build && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo_append && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E touch /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test
+  DESC = No test step for 'cpr-populate'
+  restat = 1
+
+
+#############################################
+# Custom command for cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update
+
+build cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update | ${cmake_ninja_workdir}cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update: CUSTOM_COMMAND cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download
+  COMMAND = cd /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild/cpr-populate-prefix/tmp/cpr-populate-gitupdate.cmake
+  DESC = Performing update step for 'cpr-populate'
+  pool = console
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/cpr-subbuild
+
+build all: phony cpr-populate
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt cpr-populate-prefix/tmp/cpr-populate-mkdirs.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/RepositoryInfo.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/cfgcmd.txt.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitclone.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/gitupdate.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject/mkdirs.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeSystem.cmake CMakeLists.txt cpr-populate-prefix/tmp/cpr-populate-mkdirs.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

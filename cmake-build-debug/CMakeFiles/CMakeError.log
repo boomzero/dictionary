@@ -1,0 +1,1902 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test LEAK_SANITIZER_AVAILABLE failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_d4e16 && [1/2] Building CXX object CMakeFiles/cmTC_d4e16.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_d4e16.dir/src.cxx.o 
+/Library/Developer/CommandLineTools/usr/bin/c++ -DLEAK_SANITIZER_AVAILABLE  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6   -fsanitize=leak -std=gnu++17 -MD -MT CMakeFiles/cmTC_d4e16.dir/src.cxx.o -MF CMakeFiles/cmTC_d4e16.dir/src.cxx.o.d -o CMakeFiles/cmTC_d4e16.dir/src.cxx.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fsanitize=leak' for target 'x86_64-apple-darwin21.6.0'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_07ac2 && [1/2] Building C object CMakeFiles/cmTC_07ac2.dir/OFF64_T.c.o
+FAILED: CMakeFiles/cmTC_07ac2.dir/OFF64_T.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=c99 -MD -MT CMakeFiles/cmTC_07ac2.dir/OFF64_T.c.o -MF CMakeFiles/cmTC_07ac2.dir/OFF64_T.c.o.d -o CMakeFiles/cmTC_07ac2.dir/OFF64_T.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:30:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:31:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:32:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:33:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of _off64_t failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_a3388 && [1/2] Building C object CMakeFiles/cmTC_a3388.dir/_OFF64_T.c.o
+FAILED: CMakeFiles/cmTC_a3388.dir/_OFF64_T.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=c99 -MD -MT CMakeFiles/cmTC_a3388.dir/_OFF64_T.c.o -MF CMakeFiles/cmTC_a3388.dir/_OFF64_T.c.o.d -o CMakeFiles/cmTC_a3388.dir/_OFF64_T.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:29:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:30:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:31:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:32:12: error: use of undeclared identifier '_off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:33:12: error: use of undeclared identifier '_off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(_off64_t))
+                     ^
+5 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/_OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(_off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __off64_t failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_7642f && [1/2] Building C object CMakeFiles/cmTC_7642f.dir/__OFF64_T.c.o
+FAILED: CMakeFiles/cmTC_7642f.dir/__OFF64_T.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc -D_LARGEFILE64_SOURCE=1 -D__USE_LARGEFILE64  -Wall -Wno-implicit-fallthrough  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -std=c99 -MD -MT CMakeFiles/cmTC_7642f.dir/__OFF64_T.c.o -MF CMakeFiles/cmTC_7642f.dir/__OFF64_T.c.o.d -o CMakeFiles/cmTC_7642f.dir/__OFF64_T.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:29:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:30:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:31:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:32:12: error: use of undeclared identifier '__off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:33:12: error: use of undeclared identifier '__off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__off64_t))
+                     ^
+5 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/__OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function connect exists in the socket;-framework SystemConfiguration failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_c74f4 && [1/2] Building C object CMakeFiles/cmTC_c74f4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c74f4
+FAILED: cmTC_c74f4 
+: && /Library/Developer/CommandLineTools/usr/bin/cc -DCHECK_FUNCTION_EXISTS=connect -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c74f4.dir/CheckFunctionExists.c.o -o cmTC_c74f4  -lsocket  -framework SystemConfiguration && :
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/utime.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_71d1f && [1/2] Building C object CMakeFiles/cmTC_71d1f.dir/HAVE_SYS_UTIME_H.c.o
+FAILED: CMakeFiles/cmTC_71d1f.dir/HAVE_SYS_UTIME_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_71d1f.dir/HAVE_SYS_UTIME_H.c.o -MF CMakeFiles/cmTC_71d1f.dir/HAVE_SYS_UTIME_H.c.o.d -o CMakeFiles/cmTC_71d1f.dir/HAVE_SYS_UTIME_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:18:10: fatal error: 'sys/utime.h' file not found
+#include <sys/utime.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;io.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_79f5b && [1/2] Building C object CMakeFiles/cmTC_79f5b.dir/HAVE_IO_H.c.o
+FAILED: CMakeFiles/cmTC_79f5b.dir/HAVE_IO_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_79f5b.dir/HAVE_IO_H.c.o -MF CMakeFiles/cmTC_79f5b.dir/HAVE_IO_H.c.o.d -o CMakeFiles/cmTC_79f5b.dir/HAVE_IO_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c:27:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;krb.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_520b3 && [1/2] Building C object CMakeFiles/cmTC_520b3.dir/HAVE_KRB_H.c.o
+FAILED: CMakeFiles/cmTC_520b3.dir/HAVE_KRB_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_520b3.dir/HAVE_KRB_H.c.o -MF CMakeFiles/cmTC_520b3.dir/HAVE_KRB_H.c.o.d -o CMakeFiles/cmTC_520b3.dir/HAVE_KRB_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:27:10: fatal error: 'krb.h' file not found
+#include <krb.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file linux/tcp.h exists failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_95913 && [1/2] Building C object CMakeFiles/cmTC_95913.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_95913.dir/CheckIncludeFile.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_95913.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_95913.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_95913.dir/CheckIncludeFile.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/tcp.h' file not found
+#include <linux/tcp.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;pem.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_7d95a && [1/2] Building C object CMakeFiles/cmTC_7d95a.dir/HAVE_PEM_H.c.o
+FAILED: CMakeFiles/cmTC_7d95a.dir/HAVE_PEM_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_7d95a.dir/HAVE_PEM_H.c.o -MF CMakeFiles/cmTC_7d95a.dir/HAVE_PEM_H.c.o.d -o CMakeFiles/cmTC_7d95a.dir/HAVE_PEM_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:33:10: fatal error: 'pem.h' file not found
+#include <pem.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_6b310 && [1/2] Building C object CMakeFiles/cmTC_6b310.dir/HAVE_SSL_H.c.o
+FAILED: CMakeFiles/cmTC_6b310.dir/HAVE_SSL_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_6b310.dir/HAVE_SSL_H.c.o -MF CMakeFiles/cmTC_6b310.dir/HAVE_SSL_H.c.o.d -o CMakeFiles/cmTC_6b310.dir/HAVE_SSL_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:37:10: fatal error: 'ssl.h' file not found
+#include <ssl.h>
+         ^~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_a8f0b && [1/2] Building C object CMakeFiles/cmTC_a8f0b.dir/HAVE_STROPTS_H.c.o
+FAILED: CMakeFiles/cmTC_a8f0b.dir/HAVE_STROPTS_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_a8f0b.dir/HAVE_STROPTS_H.c.o -MF CMakeFiles/cmTC_a8f0b.dir/HAVE_STROPTS_H.c.o.d -o CMakeFiles/cmTC_a8f0b.dir/HAVE_STROPTS_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:43:10: fatal error: 'stropts.h' file not found
+#include <stropts.h>
+         ^~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termio.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_61eec && [1/2] Building C object CMakeFiles/cmTC_61eec.dir/HAVE_TERMIO_H.c.o
+FAILED: CMakeFiles/cmTC_61eec.dir/HAVE_TERMIO_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_61eec.dir/HAVE_TERMIO_H.c.o -MF CMakeFiles/cmTC_61eec.dir/HAVE_TERMIO_H.c.o.d -o CMakeFiles/cmTC_61eec.dir/HAVE_TERMIO_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_TERMIO_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_TERMIO_H.c:43:10: fatal error: 'termio.h' file not found
+#include <termio.h>
+         ^~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;x509.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_a6ed7 && [1/2] Building C object CMakeFiles/cmTC_a6ed7.dir/HAVE_X509_H.c.o
+FAILED: CMakeFiles/cmTC_a6ed7.dir/HAVE_X509_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_a6ed7.dir/HAVE_X509_H.c.o -MF CMakeFiles/cmTC_a6ed7.dir/HAVE_X509_H.c.o.d -o CMakeFiles/cmTC_a6ed7.dir/HAVE_X509_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c:47:10: fatal error: 'x509.h' file not found
+#include <x509.h>
+         ^~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <x509.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;process.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_61e78 && [1/2] Building C object CMakeFiles/cmTC_61e78.dir/HAVE_PROCESS_H.c.o
+FAILED: CMakeFiles/cmTC_61e78.dir/HAVE_PROCESS_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_61e78.dir/HAVE_PROCESS_H.c.o -MF CMakeFiles/cmTC_61e78.dir/HAVE_PROCESS_H.c.o.d -o CMakeFiles/cmTC_61e78.dir/HAVE_PROCESS_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c:47:10: fatal error: 'process.h' file not found
+#include <process.h>
+         ^~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <process.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;malloc.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_41b9d && [1/2] Building C object CMakeFiles/cmTC_41b9d.dir/HAVE_MALLOC_H.c.o
+FAILED: CMakeFiles/cmTC_41b9d.dir/HAVE_MALLOC_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_41b9d.dir/HAVE_MALLOC_H.c.o -MF CMakeFiles/cmTC_41b9d.dir/HAVE_MALLOC_H.c.o.d -o CMakeFiles/cmTC_41b9d.dir/HAVE_MALLOC_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_MALLOC_H.c:49:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+
+
+int main(void){return 0;}
+
+Determining if files /usr/local/include/libssh2.h;stdio.h;inttypes.h;sys/filio.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;errno.h;fcntl.h;idn2.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;memory.h;netinet/if_ether.h;stdint.h;sockio.h exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_2b3eb && [1/2] Building C object CMakeFiles/cmTC_2b3eb.dir/HAVE_SOCKIO_H.c.o
+FAILED: CMakeFiles/cmTC_2b3eb.dir/HAVE_SOCKIO_H.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_2b3eb.dir/HAVE_SOCKIO_H.c.o -MF CMakeFiles/cmTC_2b3eb.dir/HAVE_SOCKIO_H.c.o.d -o CMakeFiles/cmTC_2b3eb.dir/HAVE_SOCKIO_H.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c:52:10: fatal error: 'sockio.h' file not found
+#include <sockio.h>
+         ^~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sockio.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_c006f && [1/2] Building C object CMakeFiles/cmTC_c006f.dir/SIZEOF___INT64.c.o
+FAILED: CMakeFiles/cmTC_c006f.dir/SIZEOF___INT64.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_c006f.dir/SIZEOF___INT64.c.o -MF CMakeFiles/cmTC_c006f.dir/SIZEOF___INT64.c.o.d -o CMakeFiles/cmTC_c006f.dir/SIZEOF___INT64.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:29:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:30:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:31:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:32:12: error: use of undeclared identifier '__int64'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:33:12: error: use of undeclared identifier '__int64'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:27:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+5 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e918f && [1/2] Building C object CMakeFiles/cmTC_e918f.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e918f.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_e918f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e918f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e918f.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'stricmp'
+  return ((int*)(&stricmp))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_28d27 && [1/2] Building C object CMakeFiles/cmTC_28d27.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_28d27.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_28d27.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_28d27.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_28d27.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'strcmpi'; did you mean 'strcmp'?
+  return ((int*)(&strcmpi))[argc];
+                  ^~~~~~~
+                  strcmp
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/include/string.h:77:6: note: 'strcmp' declared here
+int      strcmp(const char *__s1, const char *__s2);
+         ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e5e71 && [1/2] Building C object CMakeFiles/cmTC_e5e71.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e5e71.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_e5e71.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e5e71.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e5e71.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'strncmpi'; did you mean 'strncmp'?
+  return ((int*)(&strncmpi))[argc];
+                  ^~~~~~~~
+                  strncmp
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/include/string.h:84:6: note: 'strncmp' declared here
+int      strncmp(const char *__s1, const char *__s2, size_t __n);
+         ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the closesocket exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_55a32 && [1/2] Building C object CMakeFiles/cmTC_55a32.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_55a32.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_55a32.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_55a32.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_55a32.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'closesocket'
+  return ((int*)(&closesocket))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpass_r exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_ff59f && [1/2] Building C object CMakeFiles/cmTC_ff59f.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_ff59f.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_ff59f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ff59f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ff59f.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'getpass_r'; did you mean 'getpass'?
+  return ((int*)(&getpass_r))[argc];
+                  ^~~~~~~~~
+                  getpass
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/include/unistd.h:559:7: note: 'getpass' declared here
+char    *getpass(const char *) __POSIX_C_DEPRECATED(199506L);
+         ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpass_r
+  return ((int*)(&getpass_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the gethostbyname_r exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_9765f && [1/2] Building C object CMakeFiles/cmTC_9765f.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_9765f.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_9765f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9765f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9765f.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier 'gethostbyname_r'
+  return ((int*)(&gethostbyname_r))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyname_r
+  return ((int*)(&gethostbyname_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strtoi64 exist failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_3e347 && [1/2] Building C object CMakeFiles/cmTC_3e347.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_3e347.dir/CheckSymbolExists.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_3e347.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3e347.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3e347.dir/CheckSymbolExists.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:58:19: error: use of undeclared identifier '_strtoi64'
+  return ((int*)(&_strtoi64))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </usr/local/include/libssh2.h>
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtoi64
+  return ((int*)(&_strtoi64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing Curl Test HAVE_FSETXATTR_5 failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_01525 && [1/2] Building C object CMakeFiles/cmTC_01525.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_01525.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_FSETXATTR_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_01525.dir/CurlTests.c.o -MF CMakeFiles/cmTC_01525.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_01525.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:451:26: error: too few arguments to function call, expected 6, have 5
+  fsetxattr(0, 0, 0, 0, 0);
+  ~~~~~~~~~              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk/usr/include/sys/xattr.h:67:5: note: 'fsetxattr' declared here
+int fsetxattr(int fd, const char *name, const void *value, size_t size, u_int32_t position, int options);
+    ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Determining size of ADDRESS_FAMILY failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_c026b && [1/2] Building C object CMakeFiles/cmTC_c026b.dir/SIZEOF_ADDRESS_FAMILY.c.o
+FAILED: CMakeFiles/cmTC_c026b.dir/SIZEOF_ADDRESS_FAMILY.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc  -I/usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_c026b.dir/SIZEOF_ADDRESS_FAMILY.c.o -MF CMakeFiles/cmTC_c026b.dir/SIZEOF_ADDRESS_FAMILY.c.o.d -o CMakeFiles/cmTC_c026b.dir/SIZEOF_ADDRESS_FAMILY.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:4:10: fatal error: 'ws2def.h' file not found
+#include "ws2def.h"
+         ^~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "ws2def.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(ADDRESS_FAMILY))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_3a80f && [1/2] Building C object CMakeFiles/cmTC_3a80f.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_3a80f.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_IOCTLSOCKET  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_3a80f.dir/CurlTests.c.o -MF CMakeFiles/cmTC_3a80f.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_3a80f.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:241:24: error: implicit declaration of function 'ioctlsocket' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+ unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+                       ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:241:44: error: use of undeclared identifier 'FIONBIO'
+ unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+                                           ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_1827e && [1/2] Building C object CMakeFiles/cmTC_1827e.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_1827e.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_1827e.dir/CurlTests.c.o -MF CMakeFiles/cmTC_1827e.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_1827e.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:265:13: error: implicit declaration of function 'IoctlSocket' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    if(0 != IoctlSocket(0, 0, 0))
+            ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_9d285 && [1/2] Building C object CMakeFiles/cmTC_9d285.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_9d285.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_9d285.dir/CurlTests.c.o -MF CMakeFiles/cmTC_9d285.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_9d285.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:289:17: error: implicit declaration of function 'IoctlSocket' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        if(0 != IoctlSocket(0, FIONBIO, &flags))
+                ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:289:32: error: use of undeclared identifier 'FIONBIO'
+        if(0 != IoctlSocket(0, FIONBIO, &flags))
+                               ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_69dd6 && [1/2] Building C object CMakeFiles/cmTC_69dd6.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_69dd6.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_69dd6.dir/CurlTests.c.o -MF CMakeFiles/cmTC_69dd6.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_69dd6.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:312:17: error: implicit declaration of function 'ioctlsocket' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        if(0 != ioctlsocket(0, FIONBIO, &flags))
+                ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:312:32: error: use of undeclared identifier 'FIONBIO'
+        if(0 != ioctlsocket(0, FIONBIO, &flags))
+                               ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_506be && [1/2] Building C object CMakeFiles/cmTC_506be.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_506be.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_506be.dir/CurlTests.c.o -MF CMakeFiles/cmTC_506be.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_506be.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:404:43: error: use of undeclared identifier 'SO_NONBLOCK'
+        if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+                                          ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_dbb9d && [1/2] Building C object CMakeFiles/cmTC_dbb9d.dir/CurlTests.c.o
+[2/2] Linking C executable cmTC_dbb9d
+FAILED: cmTC_dbb9d 
+: && /Library/Developer/CommandLineTools/usr/bin/cc -DHAVE_O_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_dbb9d.dir/CurlTests.c.o -o cmTC_dbb9d   && :
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_522fd && [1/2] Building C object CMakeFiles/cmTC_522fd.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_522fd.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_522fd.dir/CurlTests.c.o -MF CMakeFiles/cmTC_522fd.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_522fd.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:97:23: error: variable has incomplete type 'struct hostent_data'
+  struct hostent_data hdata;
+                      ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:97:10: note: forward declaration of 'struct hostent_data'
+  struct hostent_data hdata;
+         ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:109:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, &hdata);
+       ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_c861a && [1/2] Building C object CMakeFiles/cmTC_c861a.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_c861a.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_c861a.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c861a.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c861a.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:112:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+       ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_6 failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_bfb72 && [1/2] Building C object CMakeFiles/cmTC_bfb72.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_bfb72.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_bfb72.dir/CurlTests.c.o -MF CMakeFiles/cmTC_bfb72.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_bfb72.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:116:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, buffer, 8192, &hp, &h_errnop);
+       ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_0d95e && [1/2] Building C object CMakeFiles/cmTC_0d95e.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_0d95e.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_0d95e.dir/CurlTests.c.o -MF CMakeFiles/cmTC_0d95e.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_0d95e.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:97:23: error: variable has incomplete type 'struct hostent_data'
+  struct hostent_data hdata;
+                      ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:97:10: note: forward declaration of 'struct hostent_data'
+  struct hostent_data hdata;
+         ^
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:109:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, &hdata);
+       ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_c60cf && [1/2] Building C object CMakeFiles/cmTC_c60cf.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_c60cf.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_c60cf.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c60cf.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c60cf.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:112:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+       ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_6_REENTRANT failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_20c5d && [1/2] Building C object CMakeFiles/cmTC_20c5d.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_20c5d.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_20c5d.dir/CurlTests.c.o -MF CMakeFiles/cmTC_20c5d.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_20c5d.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:116:8: error: implicit declaration of function 'gethostbyname_r' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+  rc = gethostbyname_r(address, &h, buffer, 8192, &hp, &h_errnop);
+       ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: /Users/chenqi/CLionProjects/dic/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_ce2b5 && [1/2] Building C object CMakeFiles/cmTC_ce2b5.dir/CurlTests.c.o
+FAILED: CMakeFiles/cmTC_ce2b5.dir/CurlTests.c.o 
+/Library/Developer/CommandLineTools/usr/bin/cc   -DHAVE_GLIBC_STRERROR_R  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IDN2_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -MD -MT CMakeFiles/cmTC_ce2b5.dir/CurlTests.c.o -MF CMakeFiles/cmTC_ce2b5.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_ce2b5.dir/CurlTests.c.o -c /Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c
+/Users/chenqi/CLionProjects/dic/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c:420:51: error: subscripted value is not an array, pointer, or vector
+  check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
