@@ -18,7 +18,7 @@ To build the program using cmake, follow these steps:
 - Create a build directory and change into it: `mkdir build && cd build`
 - Run cmake to configure the project and fetch the dependencies: `cmake ..`
 - Run make to build the program: `make`
-- Run the program: `./Dict`
+- Run the program: `./dic`
 
 The program will prompt you to enter a text input. You can type or paste any text you want, as long as it is in English. When you are done, press Enter to submit your input. The program will then print out the definitions of the words in your input using an online dictionary API. If a word is not found in the dictionary, the program will print "not found" instead. To exit the program, enter "0" as your input.
 
